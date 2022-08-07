@@ -1,0 +1,17 @@
+>>> user_1 = User.objects.create_user('Морошка')
+>>> user_2 = User.objects.create_user('Гильгамеш')
+>>> au_1 = Author.objects.create(user=user_1)
+>>> au_2 = Author.objects.create(user=user_2)
+>>> au_1.save()
+>>> au_2.save()
+>>> c = Category 
+>>> c.objects.create(category = "Спорт")
+<Category: Category object (1)>
+>>> c.objects.create(category = "Видеоигры")
+<Category: Category object (2)>
+>>> c.objects.create(category = "История")   
+<Category: Category object (3)>
+>>> c.objects.create(category = "Музыка")  
+<Category: Category object (4)>
+ p_1 = Post.objects.create(post_author=a_1, choose="ne", text='Это новость!') 
+>>> p_1.save()
